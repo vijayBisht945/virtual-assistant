@@ -8,7 +8,7 @@ export default function AuthContext({ children }) {
   const [frontendimage, setFrontendImage] = useState(null)
   const [backendimage, setBackendImage] = useState(null)
   const [selectimage, setSelectImage] = useState(null)
-  const serverUrl = import.meta.env.VITE_SERVER_URL || "http://localhost:5050"
+  const serverUrl = import.meta.env.VITE_SERVER_URL || "https://virtual-assistant-6n4r.onrender.com"
 
   useEffect(() => {
     if (!frontendimage?.startsWith("blob:")) return undefined
